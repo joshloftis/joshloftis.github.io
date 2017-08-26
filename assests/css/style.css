@@ -1,0 +1,146 @@
+body {
+  background: black url("../images/memphis-colorful.png") repeat;
+  color: #777777;
+  width: 100%;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Georgia', Times, 'Times New Roman', serif;
+  color: #4aaaaf;
+}
+p, li, a, figcaption, label, input[placeholder] {
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+h1 {
+  font-size: 40px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 25px;
+}
+p {
+  font-size: 14px;
+  line-height: 35px;
+  margin-bottom: 20px;
+}
+section:first-child p {
+  margin-top: -9px;
+}
+section, aside {
+  padding: 20px;
+  border: #dddddd solid 1px;
+}
+hr {
+  margin: 20px 0;
+}
+.header-bar {
+  border-bottom: #cccccc solid 2px;
+}
+.content {
+  min-height: calc(100vh - 70px);
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.content-container {
+  margin-bottom: 40px;
+  background: #fff;
+}
+.main-container {
+  margin: 0 auto;
+  width: 960px;
+}
+.section-container {
+  width: 608px;
+}
+.side-container {
+  width: 228px;
+}
+.personal {
+  background: #4aaaa5;
+  color: #fff;
+  display: inline-block;
+  padding: 20px 30px;
+}
+nav {
+  margin-top: 30px;
+  color: #dddddd;
+}
+nav ul li {
+  display: inline;
+  padding-left: 20px;
+  list-style: none;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #777777;
+}
+nav ul li a:hover {
+  color: #4aaaaf;
+}
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0 20px;
+  border: 1px solid #dddddd;
+  box-sizing:  border-box;
+}
+input[type="submit"] {
+  margin:0;
+  margin-top: -15px;
+  width: auto;
+  background: #4aaaa5;
+  padding:10px 20px;
+  font-size: 16px;
+  color: #ffffff;
+  border:none;
+  cursor: pointer;
+}
+figure {
+  position: relative;
+  margin-bottom: 40px;
+}
+figcaption {
+  background: #4aaaa5;
+  width: 100%;
+  position: absolute;
+  bottom: 20px;
+}
+figcaption h3 {
+  text-align: center;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 15px 0;
+}
+.profile-image {
+  margin-right: 10px;
+}
+.icon {
+  margin: 0 5px;
+}
+.clearfix::after {
+  content:"";
+  display:block;
+  clear:both;
+}
+footer {
+  border-top: #4aaaa5 solid 5px;
+  background: #666666;
+  text-align: center;
+  width: 100%;
+}
+.copyright {
+  padding: 20px;
+  font-size: 12px;
+  margin-bottom: 0;
+  color: #dddddd;
+}
+.hover:hover {
+  transition: all .2s ease-in-out;
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(74,170,75,.5);
+}

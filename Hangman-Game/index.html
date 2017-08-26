@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hangman | Do you dare?</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Nosifer" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/icon-e543e06e.png"/>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Hangman</h1>
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+          <div class="main-section" id="instructions">
+            <h2>Instructions:</h2>
+            <p>Press any key to start. You can guess incorrectly up to 10 times. After 10 incorrect guesses, if you haven’t guessed the correct word, you lose and hang an innocent. Pressure's on.</p>
+            <h2>Your guesses remaining:</h2>
+            <p><span id="guesses-remaining">10</span></p>
+            <h2>Letters guessed:</h2>
+            <p class="wrongLetters"><span id="letters-guessed-wrong"></span></p>
+          </div>
+        </div>
+        <div class="col-lg-5 col-md-5 col-sm-6 col-xs-12">
+          <div class="main-section" id="game-area">
+            <img id="hangman-img" src="assets/images/Base-0.png" alt="Hangman foundation" class="img-responsive hangman">
+            <p class="word"><span id="currentWord"></span></p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <div class="opaque-section score-section" id="wins-area">
+                <h3>Wins</h3>
+                <p><span id="wins">0</span></p>
+              </div>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <div class="opaque-section score-section" id="losses-area">
+                <h3>Losses</h3>
+                <p><span id="losses">0</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 col-lg-push-9 col-md-3 col-md-push-9 col-sm-12 col-xs-12">
+          <div class="opaque-section score-section" id="new-word" onclick="newWord()">
+            <h3>Get new word?</h3>
+          </div>
+        </div>
+        <div class="col-lg-9 col-lg-pull-3 col-md-9 col-md-pull-3 col-sm-12 col-xs-12">
+          <div class="opaque-section" id="connect-area">
+            <div class="row">
+              <div class="col-xs-12 col-sm-3">
+                <h4>Connect With Me</h4>
+              </div>
+              <div class="col-xs-4 col-sm-3">
+                <a href="https://www.linkedin.com/in/josh-loftis-a6b48a132/"<i class="fa fa-linkedin" aria-hidden="true"></i></a>
+              </div>
+              <div class="col-xs-4 col-sm-3">
+                <a href="https://stackexchange.com/users/11208692/josh-loftis"<i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
+              </div>
+              <div class="col-xs-4 col-sm-3">
+                <a href="https://github.com/jshlfts32"<i class="fa fa-github" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+  </body>
+  <script src="assets/javascript/hangman.js"></script>
+</html>

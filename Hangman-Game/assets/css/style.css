@@ -1,0 +1,132 @@
+body {
+  height: 100%
+  background-image: -webkit-linear-gradient(top right, #B21F1F 0%, #332860 100%);
+  background-image: -o-linear-gradient(top right, #B21F1F 0%, #332860 100%);
+  background-image: linear-gradient(to bottom left, #B21F1F 0%, #332860 100%);
+}
+h2, h3, h4, h5,z h6, p, a, label, textarea, input, [placeholder] {
+  font-family: 'Lato', sans-serif;
+}
+h1 {
+  font-family: 'Nosifer', cursive;
+  font-size: 72px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #fff;
+}
+h2 {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+h3 {
+  font-size: 25px;
+  text-align:center;
+  color: #fff;
+}
+h4 {
+  font-size: 30px;
+  margin:0;
+  color: #fff;
+  margin-top:20px;
+}
+.main-section {
+  background: #fff;
+  margin-bottom: 35px;
+  height: 406px;
+  box-shadow: 0 2px 18px 3px rgba(50,50,50,0.50);
+  border-radius: 8px;
+  padding: 30px;
+}
+#instructions>p {
+  margin-left: 20px;
+  margin-bottom: 25px;
+}
+.opaque-section {
+  background: rgba(216,216,216,0.49);
+  height: 168px;
+  border-radius: 8px;
+  padding: 30px;
+}
+.score-section {
+  height: 202px;
+  margin-bottom:2px;
+  display: block;
+  padding-30px;
+}
+.score-section>p {
+  text-align:center;
+  margin-top: 30px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+}
+.word {
+  text-align:center;
+  font-size: 25px;
+  margin-top:40px;
+  letter-spacing: 10px;
+}
+.wrongLetters {
+  letter-spacing:10px;
+}
+#new-word {
+  height: 201px;
+  margin-top:-33px;
+  border-radius: 0 0 8px 8px;
+}
+#wins-area {
+  border-radius: 8px 8px 0 0;
+}
+#losses-area {
+  border-radius:0;
+}
+#new-word h3 {
+  font-size:40px;
+}
+#hangman-img {
+  width: 175px;
+}
+h4 {
+  text-align:center;
+}
+.fa {
+  display: block;
+  font-size: 80px;
+  color: #fff;
+}
+.hangman {
+  margin: 0 auto;
+  margin-top: 10px;
+}
+.fa-linkedin:hover {
+  color: #0077B5;
+}
+.fa-stack-overflow:hover {
+  color: #FF9900;
+}
+.fa-github:hover {
+  color: #000000;
+}
+#connect-area a {
+  text-decoration: none;
+  text-align: center;
+  margin-top: 10px;
+}
+#new-word:hover {
+  background: rgba(255,255,255,0.8);
+  cursor: pointer;
+}
+#new-word:hover h3 {
+  color:black;
+}
+@media screen and (max-width:991px) {
+  #new-word {
+    margin-top:0;
+    height: 202px;
+  }
+}
+@media screen and (max-width:768px) {
+  #connect-area {
+    height:auto;
+  }
+}
