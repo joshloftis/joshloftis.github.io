@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>A Game of Crystals | Luck or Skill?</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="shortcut icon" href="assets/images/Crystals/icon.png">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div>
+      <h1 class="text-center">A Game of Crystals</h1>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+        <div class="main-section a">
+          <h3 class="text-center">Game instructions:</h3>
+          <p>You've been given a random number, which resets for each game.</p>
+          <p>There are four crystals. By clicking on a crystal you will add a specific amount of points to your total score. The number of points for each crystal is chosen randomly and resets for each game. You will have to remember the value for each crystal if you want to win the game.</p>
+          <p>To the win the game, you must match your score to the random number that has been given to you. The game does not end until you match the score or exceed it. If you exceed the number, you lose.</p>
+          <p>Good luck. Click a crytal to get started.</p>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <div class="main-section">
+          <h3 class="text-center">Click a Crystal to Start</h3>
+          <img id="crystalOne" class="crystal img-responsive" src="assets/images/Crystals/blue-shape.svg" alt="Blue crystal">
+          <img id="crystalTwo" class="crystal img-responsive" src="assets/images/Crystals/red-shape.svg" alt="Red crystal">
+          <img id="crystalThree" class="crystal img-responsive" src="assets/images/Crystals/green-shape.svg" alt="Green crystal">
+          <img id="crystalFour" class="crystal img-responsive" src="assets/images/Crystals/orange-shape.svg" alt="Orange crystal">
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div id="alert-box">
+              <h3 class="text-center">Last Game</h3>
+              <p class="text-center"><span id="game-alert"></span></p>
+            </div>
+          </div>
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div id="wins-area">
+              <h3 class="text-center">Wins</h3>
+              <p class="text-center"><span id="wins">0</span></p>
+            </div>
+          </div>
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div id="losses-area">
+              <h3 class="text-center">Losses</h3>
+              <p class="text-center"><span id="losses">0</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-6">
+        <div class="score-section">
+          <h2 class="text-center">Score to Match</h2>
+          <div id="random-number"><!--This is the div the randomly generated number will be placed in--></div>
+        </div>
+      </div>
+      <div class="col-xs-6">
+        <div class="score-section score-section-b">
+          <h2 class="text-center">Your Current Score</h2>
+          <div id="user-score"><!--This is the div that will hold the user's calculated score--></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="assets/javascript/game.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+h1 {
+  margin-bottom: 40px;
+}
+h3 {
+  margin:0 0 10px 0;
+}
+.main-section {
+  background: #e3e3e3;
+  padding: 20px;
+  min-height: 395px;
+}
+.crystal {
+  margin-top: 40px;
+  cursor: pointer;
+  width: 125px;
+  padding: 9px;
+  display: inline;
+}
+.crystal:hover {
+  -webkit-box-shadow: 0px 0px 33px 2px rgba(181,177,181,0.76);
+  -moz-box-shadow: 0px 0px 33px 2px rgba(181,177,181,0.76);
+  box-shadow: 0px 0px 33px 2px rgba(181,177,181,0.76);
+}
+#random-number, #user-score {
+  text-align: center;
+  font-size: 30px;
+}
+#alert-box, #wins-area, #losses-area {
+  min-height: 125px;
+  background: #e3e3e3;
+}
+#alert-box h3, #wins-area h3, #losses-area h3 {
+  padding-top: 10px;
+}
+#alert-box p, #wins-area p, #losses-area p {
+  font-size: 25px;
+  padding-top: 10px;
+}
+#alert-box {
+  border-radius: 0 15px 0 0;
+}
+.a {
+  border-radius: 15px 0 0 0;
+}
+.score-section {
+  background: #e3e3e3;
+  border-radius: 0 0 0 15px;;
+}
+.score-section-b {
+  background: #e3e3e3e3;
+  border-radius: 0 0 15px; 0;
+}
+.score-section h2 {
+  padding: 20px 0 10px;
+}
+.score-section div {
+  padding: 0 0 20px;
+}
+.green {
+  color: green;
+}
+.red {
+  color: red;
+}
