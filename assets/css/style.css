@@ -1,0 +1,68 @@
+body {
+  background: url('../images/cave-image.png');
+  background-size: 1600px;
+  background-repeat: no-repeat;
+  color: rgba(255,255,255,1);
+}
+div {
+  margin: 0;
+}
+h1 {
+  margin-bottom: 40px;
+}
+h3 {
+  margin:0 0 10px 0;
+}
+.main-section {
+  background: rgba(255,255,255, 0.5);
+  padding: 20px;
+  min-height: 395px;
+}
+.crystal {
+  margin-top: 40px;
+  cursor: pointer;
+  width: 125px;
+  padding: 9px;
+  display: inline;
+}
+#random-number, #user-score {
+  text-align: center;
+  font-size: 30px;
+}
+#alert-box, #wins-area, #losses-area {
+  min-height: 125px;
+  background: rgba(255,255,255, 0.5);
+}
+#alert-box h3, #wins-area h3, #losses-area h3 {
+  padding-top: 10px;
+}
+#alert-box p, #wins-area p, #losses-area p {
+  font-size: 25px;
+  padding-top: 10px;
+}
+#alert-box {
+  border-radius: 0 15px 0 0;
+}
+.a {
+  border-radius: 15px 0 0 0;
+}
+.score-section {
+  background: rgba(255,255,255, 0.5);
+  border-radius: 0 0 0 15px;;
+}
+.score-section-b {
+  background: rgba(255,255,255, 0.5);
+  border-radius: 0 0 15px; 0;
+}
+.score-section h2 {
+  padding: 20px 0 10px;
+}
+.score-section div {
+  padding: 0 0 20px;
+}
+.green {
+  color: green;
+}
+.red {
+  color: red;
+}
