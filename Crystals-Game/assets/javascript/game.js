@@ -37,22 +37,12 @@ $(document).ready(function(){
     }
   }
 
-  //MUST DRY UP
-  $('#crystalOne').on("click", function () {
-    $('#user-score').html(score += crystalValues[0]);
-    evaluateGame();
-  });
-  $('#crystalTwo').on("click", function () {
-    $('#user-score').html(score += crystalValues[1]);
-    evaluateGame();
-  });
-  $('#crystalThree').on("click", function () {
-    $('#user-score').html(score += crystalValues[2]);
-    evaluateGame();
-  });
-  $('#crystalFour').on("click", function () {
-    $('#user-score').html(score += crystalValues[3]);
-    evaluateGame();
+  //when clicking any individual crystal, the value of the crystal is added to the user score
+  $('.crystal').each(function(i) {
+    $(this).on("click", function() {
+      $('#user-score').html(score += crystalValues[i]);
+      evaluateGame();
+    });
   });
 
   function resetGame() {

@@ -1,3 +1,12 @@
+body {
+  background: url('../images/cave-image.png');
+  background-size: 1600px;
+  background-repeat: no-repeat;
+  color: rgba(255,255,255,1);
+}
+div {
+  margin: 0;
+}
 h1 {
   margin-bottom: 40px;
 }
@@ -5,7 +14,7 @@ h3 {
   margin:0 0 10px 0;
 }
 .main-section {
-  background: #e3e3e3;
+  background: rgba(255,255,255, 0.5);
   padding: 20px;
   min-height: 395px;
 }
@@ -16,18 +25,13 @@ h3 {
   padding: 9px;
   display: inline;
 }
-.crystal:hover {
-  -webkit-box-shadow: 0px 0px 33px 2px rgba(181,177,181,0.76);
-  -moz-box-shadow: 0px 0px 33px 2px rgba(181,177,181,0.76);
-  box-shadow: 0px 0px 33px 2px rgba(181,177,181,0.76);
-}
 #random-number, #user-score {
   text-align: center;
   font-size: 30px;
 }
 #alert-box, #wins-area, #losses-area {
   min-height: 125px;
-  background: #e3e3e3;
+  background: rgba(255,255,255, 0.5);
 }
 #alert-box h3, #wins-area h3, #losses-area h3 {
   padding-top: 10px;
@@ -43,11 +47,11 @@ h3 {
   border-radius: 15px 0 0 0;
 }
 .score-section {
-  background: #e3e3e3;
+  background: rgba(255,255,255, 0.5);
   border-radius: 0 0 0 15px;;
 }
 .score-section-b {
-  background: #e3e3e3e3;
+  background: rgba(255,255,255, 0.5);
   border-radius: 0 0 15px; 0;
 }
 .score-section h2 {
