@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="334px" height="126px" viewBox="0 0 334 126" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>RPG</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="7.29799238%" x2="50%" y2="117.628848%" id="linearGradient-1">
+            <stop stop-color="#0F100F" offset="0%"></stop>
+            <stop stop-color="#7B200D" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-size="144" font-family="HiraKakuStd-W8, Hiragino Kaku Gothic Std" font-weight="600">
+        <text id="RPG" fill="url(#linearGradient-1)">
+            <tspan x="-8.672" y="118">RPG</tspan>
+        </text>
+    </g>
+</svg>
