@@ -2,14 +2,17 @@ body {
   /*background: url('../images/star-wars-background.jpg');*/
   background-repeat: no-repeat;
 }
+h2 {
+  font-size: 18px;
+}
 .logo {
   margin-top: 20px;
 }
-.start-area {
-  margin-top: 30px;
-}
+/*.start-area {
+  margin-top:px;
+}*/
 .charDiv > img {
-  height: 150px;
+  height: 75px;
 }
 .background {
   background: red;
@@ -17,4 +20,17 @@ body {
 .name, .health {
   text-align: center;
   font-size: 18px;
+}
+.name {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+.health {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-size: 13px;
+}
+.charDiv {
+  cursor: pointer;
 }
