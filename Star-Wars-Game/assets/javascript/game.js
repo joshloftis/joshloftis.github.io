@@ -63,13 +63,15 @@ $(document).ready(function() {
       //after player is selected, all non-selected images are moved to the holding bin div
       $('.charDiv').not(this).appendTo('#holdingBin');
       //setting playerChosen to true to unlock
+      //remove starting area div
+      $('#startingArea').empty();
       playerChosen = true;
       // else if does nothing to keep the user from clicking holding bin enemies multiple times
     } else if (enemyChosen == true){
     // when playerChosen is true...
     } else {
       // add the next clicked image to the defenderArea (i.e., the chosen enemy)
-      $('#defenderArea').html(this);
+      $('#defender').html(this);
       //remove the ability to click the image again
       $(this).off('click');
       //setting enemyChosen to true to act as lock
@@ -87,7 +89,7 @@ $(document).ready(function() {
     //When the user clicks the attack button...
     $('#attackBtn').on('click', function() {
       // if enemyDefeated is set to false...
-      if (enemyDefeated == false) {
+      if (enemyDefeated == false && playerChosen == true) {
         // subtract the enemyCounter from the playerHP
         playerHP -= enemyCounter;
         //substact the playerAttack from the enemyHP
@@ -97,35 +99,37 @@ $(document).ready(function() {
         //replace player HP on screen for user info
         $('#playerArea > .charDiv > .health').html(playerHP);
         //replace enemy HP on screen for user info
-        $('#defenderArea > .charDiv > .health').html(enemyHP);
+        $('#defender > .charDiv > .health').html(enemyHP);
+        // add the amount of damage player chosen is doing and enemy is doing on screen
+        $('#alert').html('<div class="alerts col-xs-4"><div class="row"><div class="col-xs-12">You attacked ' + chosenEnemy.data('name') + ' for ' + playerAttack + ' damage.</div><div class="col-xs-12">' + chosenEnemy.data('name') + ' attack you back for ' + enemyCounter + ' damage.</div></div></div>');
         //if the playerHP gets to be less than or equal to 0...
           if (playerHP <= 0) {
             //replace all content on screen, sans logo, with loser text
-            $('#content').html("YOU LOSE! Refresh page to play again.");
+            $('#content').html('<div class="endText">YOU LOSE! Refresh page to play again.</div>');
             //while attacking enemy, if enemy HP is less than or equal to 0...
           } else if (enemyHP <= 0) {
              enemiesDefeated += 1;
+             //clear damage alerts area
+             $('.alerts').empty();
+             //remove class to remove border and background
+             $('.alerts').addClass('alert-no-border');
              console.log(enemiesDefeated);
              //set enemyDefeated to true so if user clicks attack button a message tells them to select an enemy
              enemyDefeated = true;
              //set enemyChosen to false so the user can select another enemy to attack
              enemyChosen = false;
              //remove the defeated enemy
-             $('#defenderArea').empty();
+             $('#defender').empty();
              //of the enemiesDefeated count equals three (meaning, all enemies defeated)///
              if (enemiesDefeated === 3) {
                //rempve all content on page, sans logo, and replace with win message
-                 $('#content').html("Wisely you chose, young padwan. You win. Refresh the page to play again.");
+                 $('#content').html('<div class="endText">Wisely you chose, young padawan. You win. Refresh the page to play again.</div>');
                }
            }
-        // if enemyDefeated is true...
-      } else if (enemyDefeated == true) {
         // if enemyChosen is false
-        if (enemyChosen == false) {
-          //when the user clicks the attack button, print message to screen
-          $('#defenderArea').html("An enemy you most choose.");
-        }
-
+      } else if (enemyChosen == false) {
+        //when the user clicks the attack button, print message to screen
+        alert("An enemy you must choose! Master Yoda requires it!");
       }
     });
 });

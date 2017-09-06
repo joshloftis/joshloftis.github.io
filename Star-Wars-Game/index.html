@@ -13,30 +13,26 @@
     <div class="container">
       <img class="logo img-responsive" src="assets/images/logo.png" alt="Star Wars logo" width="200">
       <div id="content">
-        <h2>Choose a character</h2>
         <div id="startingArea" class="row start-area">
-          <div id="char1" class="col-xs-3 charDiv">
-          </div>
-          <div id="char2" class="col-xs-3 charDiv">
-          </div>
-          <div id="char3" class="col-xs-3 charDiv">
-          </div>
-          <div id="char4" class="col-xs-3 charDiv">
-          </div>
+          <h2 class="col-xs-12">Choose a character</h2>
+          <div id="char1" class="col-xs-3 charDiv"></div>
+          <div id="char2" class="col-xs-3 charDiv"></div>
+          <div id="char3" class="col-xs-3 charDiv"></div>
+          <div id="char4" class="col-xs-3 charDiv"></div>
         </div>
-        <h2>Your Chosen Character</h2>
         <div id="playerArea" class="row">
-          <!--Area where the user's chosen character will be placed-->
+          <h2 class="col-xs-12">Your Chosen Character</h2>
         </div>
-        <h2>Enemies Available to attack</h2>
         <div id="holdingBin" class="row">
-          <!--Area where the user's opponents will be placed-->
-        </div>
-        <h2>Your Chosen Enemy</h2>
-        <div id="defenderArea" class="row">
-          <!--Area where the current defender is placed-->
+          <h2 class="col-xs-12">Enemies Available to attack</h2>
         </div>
         <button id="attackBtn">Attack!</button>
+        <div id="defenderArea" class="row">
+          <h2 class="col-xs-12">Your Chosen Enemy</h2>
+          <div id="defender"></div>
+          <div id="alert"></div>
+          <div id="chooseEnemyFirst"></div>
+        </div>
       </div>
     </div>
     <script src="assets/javascript/game.js"></script>

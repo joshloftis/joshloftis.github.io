@@ -1,16 +1,24 @@
 body {
-  /*background: url('../images/star-wars-background.jpg');*/
+  background: url('../images/star-wars-background.jpg');
   background-repeat: no-repeat;
 }
 h2 {
-  font-size: 18px;
+  font-size: 22px;
+  text-shadow: -1px 0 #eeba30, 0 1px #eeba30, 1px 0 #eeba30, 0 -1px #eeba30;
+}
+button {
+  margin-top: 20px;
 }
 .logo {
   margin-top: 20px;
 }
-/*.start-area {
-  margin-top:px;
-}*/
+.charDiv {
+  max-width: 150px;
+  background: rgba(255,255,255,0.9);
+  border: 2px solid #eeba30;
+  border-radius: 3px;
+  margin-left: 15px;
+}
 .charDiv > img {
   height: 75px;
 }
@@ -33,4 +41,23 @@ h2 {
 }
 .charDiv {
   cursor: pointer;
+}
+.alerts {
+  background: rgba(255,255,255,0.9);
+  border: 2px solid #eeba30;
+  border-radius: 3px;
+  margin-left: 15px;
+}
+.alert-no-border {
+  border: none;
+  background: none;
+}
+.endText {
+  margin-top: 30px;
+  padding: 30px;
+  max-width: 200px;
+  height: 150px;
+  background: rgba(255,255,255,0.9);
+  border: 2px solid #eeba30;
+  border-radius: 3px;
 }
