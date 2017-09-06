@@ -52,7 +52,7 @@ $(document).ready(function() {
       //run the functions to control time counting down
       questionTimer(); count();
       //display questions
-      $('#question').html('<div><p class="questiondiv">' + questionData.question[questionIndex] + '</p></div>');
+      $('#question').html('<div><p class="questionText">' + questionData.question[questionIndex] + '</p></div>');
       //display answers
       for (var i=0; i<questionData.answerList[questionIndex].length; i++) {
         $('#answers').append('<li class="anAnswer">' + questionData.answerList[questionIndex][i] + '</li>');
