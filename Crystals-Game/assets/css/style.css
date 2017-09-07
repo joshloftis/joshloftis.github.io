@@ -15,7 +15,7 @@ h3 {
   margin:0 0 10px 0;
 }
 .main-section {
-  background: rgba(255,255,255, 0.5);
+  background: rgba(0,0,0, 0.5);
   padding: 20px;
   min-height: 395px;
 }
@@ -31,7 +31,7 @@ h3 {
 }
 #alert-box, #wins-area, #losses-area {
   min-height: 125px;
-  background: rgba(255,255,255, 0.5);
+  background: rgba(0,0,0, 0.5);
 }
 #alert-box h3, #wins-area h3, #losses-area h3 {
   padding-top: 10px;
@@ -47,11 +47,11 @@ h3 {
   border-radius: 5px 0 0 0;
 }
 .score-section {
-  background: rgba(255,255,255, 0.5);
+  background: rgba(0,0,0, 0.5);
   border-radius: 0 0 0 5px;
 }
 .score-section-b {
-  background: rgba(255,255,255, 0.5);
+  background: rgba(0,0,0, 0.5);
   border-radius: 0 0 5px 0;
 }
 .score-section h2 {
