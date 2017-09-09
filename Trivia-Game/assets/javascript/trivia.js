@@ -28,18 +28,6 @@ $(document).ready(function() {
   //Functions
   //=============================================================================
 
-  //function to start game
-  function startGame() {
-    //on click of start game button, game loads
-    $('.startGame').on('click', function() {
-      //clear start button
-      $('#btnDiv').empty();
-      //add question and list of answers
-      return gameDisplay();
-    });
-  }
-
-
   // function to display time, questions, and answers on screen
   function gameDisplay() {
     if (questionIndex == questionData.question.length) {
@@ -93,7 +81,7 @@ $(document).ready(function() {
       //empty the timer div, question div, and answer div
       $('#timeRemaining, #question, #answers').empty();
       //insert on screen information about the user's answer or non-answer
-      $('#answerScreen').html('<div><p class="message">Yes! That was correct.</p></div><div><p>' + questionData.correctAns[questionIndex] + ' was the correct answer! Great job!</p></div>');
+      $('#answerScreen').html('<div><p class="message">Yes! ' + $(this).html() + ' was the correct answer.</p></div><div><p>Great job!</p></div>');
       //run the function to load the next question
       loadNext();
     } //if the user clicks the incorrect answer, store answer as incorrect answer
@@ -103,7 +91,7 @@ $(document).ready(function() {
       //empty the timer div, question div, and answer div
       $('#timeRemaining, #question, #answers').empty();
       //insert on screen information about the user's answer or non-answer
-      $('#answerScreen').html('<div><p class="message">Nope! Wrong answer!</p></div><div><p>The correct answer was ' + questionData.correctAns[questionIndex] + '.</p></div>');
+      $('#answerScreen').html('<div><p class="message">Nope! ' + $(this).html() + ' is the wrong answer!</p></div><div><p>The correct answer was ' + questionData.correctAns[questionIndex] + '.</p></div>');
       //run the function to load the next question
       loadNext();
     }
@@ -117,8 +105,6 @@ $(document).ready(function() {
     clearTimeout(remainingTime);
     //clear the count down interval
     clearInterval(intervalId);
-    //if no questions are left, do...
-    if (questionIndex == questionData.question.length) {
     //...empty the correct, incorrect, or no answer screen
     $('#answerScreen').empty();
     //show number of correct answers, incorrect answers, and non-answered questions (separated for readability)
@@ -127,10 +113,35 @@ $(document).ready(function() {
     .append('<div><p>You answered ' + incorrectCount + ' questions incorrect.</p></div>')
     .append('<div><p>You left  ' + blank + ' question(s) blank.</p></div>')
     .append('<button id="gameAgain">Restart Game</button>');
-    }
   }
 
-  //had problems running this in a funciton, so did this instead...
+  //function to queue up the next question after the correct, incorrect, or no answer screen
+  function loadNext(){
+    nextQuestion = setTimeout(gameDisplay, 3500);
+    questionIndex++;
+  }
+
+  //function to decrement the timerPerQuestion by 1 every second
+  function count() {
+    intervalId = setInterval(questionTimer, 1000);
+  }
+  //function to decrement timerPerQuestion and that time on screen
+  function questionTimer() {
+    timePerQuestion--;
+    $('#timeRemaining').html('<h3>' + timePerQuestion + '</h3>');
+  }
+
+  //Game actions
+  //=============================================================================
+
+  //on click of start game button, game loads
+  $('.startGame').on('click', function() {
+    //clear start button
+    $('#btnDiv').empty();
+    //add question and list of answers
+    return gameDisplay();
+  });
+
   //To restart the game, the user can click the restart game button, which...
   $('.container').on('click', '#gameAgain', function() {
     //empties the end screen
@@ -144,25 +155,6 @@ $(document).ready(function() {
     //sets blank to 0 so end game total will be accurate per game
     blank = 0;
     //loads the gameDisplay function to load the timer, first quesiton and answers
-    gameDisplay();
+    return gameDisplay();
   });
-
-  //function to queue up the next question after the correct, incorrect, or no answer screen
-  function loadNext(){
-    nextQuestion = setTimeout(gameDisplay, 3500);
-    questionIndex++;
-  }
-
-  //function to decrement the timerPerQuestion by 1 every 1 second
-  function count() {
-    intervalId = setInterval(questionTimer, 1000);
-  }
-  //function to decrement timerPerQuestion and that time on screen
-  function questionTimer() {
-    timePerQuestion--;
-    $('#timeRemaining').html('<h3>' + timePerQuestion + '</h3>');
-  }
-
-  //calling the startGame function to kick things off
-  startGame();
 });
