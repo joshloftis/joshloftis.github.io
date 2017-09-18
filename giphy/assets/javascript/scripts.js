@@ -1,5 +1,5 @@
 var topics = ["Tyrion Lannister", "Jamie Lannister", "Cersi Lannister", "Jon Snow", "Ned Stark", "Bran Stark", "Sansa Stark", "Arya Stark", "Rickon Stark", "Catelyn Stark", "Petyr Baelish", "Robert Baratheon", "Joffery Baratheon", "Melisandre", "Stannis Baratheon"];
-var queryURL = "http://api.giphy.com/v1/gifs/search"; //api_key= dc6zaTOxFJmzC &limit=10";
+var queryURL = "https://api.giphy.com/v1/gifs/search"; //api_key= dc6zaTOxFJmzC &limit=10";
 var api = "dc6zaTOxFJmzC";
 var query, still, animate;
 
