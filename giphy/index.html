@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <h1 class="text-center">Game of Thrones Gifs</h1>
+        <p>Click a button below to see 10 images of that character. Click the image to see the gif animate!</p>
+        <p>You can add additional characters by entering them in the input field below and clicking add.</p>
+        <div id="buttons">
+          <!-- buttons will be added here-->
+        </div>
+          <div class="form-group">
+            <form id="search" class="form-inline">
+                <input id='search-bar' type="search" class='form-control' placeholder='Enter Another Game of Thrones Character'>
+                <button id="add-characters" type="submit" class="btn btn-success">Add Character</button>
+            </form>
+          </div>
+        <div id="images" class="row">
+          <!-- gifs will be added here-->
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascript/scripts.js"></script>
+  </body>
+</html>

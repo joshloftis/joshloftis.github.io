@@ -1,0 +1,51 @@
+body {
+  height: 100%;
+  background: url('../images/got.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;;
+  color: #ffffff;
+}
+@font-face {
+  font-family: GoT;
+  src: url(../font/GameofThrones.ttf);
+}
+.content {
+  background: rgba(0,0,0,0.6);
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 4px;
+}
+h1 {
+  font-family: GoT, serif;
+  margin-bottom: 20px;
+}
+button {
+    border: none;
+    font-size: 14px;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.btn-primary {
+  background-color: 	#1E90FF;
+  margin: 3px;
+}
+.btn-primary:hover, .btn-success:hover {
+  box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  opacity: 0.9;
+}
+#buttons {
+  margin-top: 20px;
+}
+.form-group {
+  margin-top: 20px;
+}
+#search-bar {
+  width: 70%;
+  margin-left: 4px;
+}
+.gifs {
+  margin: 20px 15px;;
+  display: inline-block;
+}
