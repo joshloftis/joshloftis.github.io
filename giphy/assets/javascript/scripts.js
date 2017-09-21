@@ -67,6 +67,7 @@ $('#add-characters').on('click', function(event){
     topics.push(newButton);
     //re-generate all buttons on screen, with the newest button added too
     setButtons();
+    $('#search-bar').val('');
   }
 });
 
@@ -97,6 +98,6 @@ $(document).on('click', '#char-btns', function(){
   $('#images').empty();
   //stores the value of the button in the query var, which is hoisted to the queryURL to return gifs on that topic
   query = $(this).html();
-  //call the displayGifs function 
+  //call the displayGifs function
   displayGifs();
 });
